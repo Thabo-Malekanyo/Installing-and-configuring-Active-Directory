@@ -6,27 +6,23 @@
 This tutorial outlines the prerequisites and installation of Microsoft Active Directory on a Windows Server 2022 VM.<br />
 
 
-<h2>Video Demonstration</h2>
 
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Internet Information Services (IIS)
+
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows Server 2022
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+-Microsoft Azure Subscribtion
+- Installed Windows Server 2022
+  
 
 <h2>Installation Steps</h2>
 
@@ -34,7 +30,7 @@ This tutorial outlines the prerequisites and installation of Microsoft Active Di
 <img src="https://i.imgur.com/pvzDb4z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Go to 'ADD ROLES AND FEATURES', choose Active Directory Domain Services,then click next,add features and click next and INSTALL.
 </p>
 <br />
 
@@ -42,7 +38,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/qsseRGM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After successfully installing Active Directory, go ahead and promote this server to a domain controller.
 </p>
 <br />
 
@@ -51,7 +47,7 @@ p>
 <img src="https://i.imgur.com/EtSJUV2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Click on "add a new forest" and choose the ROOT DOMAIN NAME of your choice,it can be "mydomain.com" or any name you like. Go ahead and click next and then INSTALL...
 </p>
 <br />
 
@@ -62,7 +58,7 @@ p>
 <img src="https://i.imgur.com/81hvlLy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once the Installation is complete, the VM is going to restart and terminate the RDP connection and you will have to reconnect again....
 </p>
 <br />
 
@@ -71,7 +67,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/MuSM3qR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Reconnecting back to the Windows Server 2022 VM, you should type your Root Domain name\Username and enter your password....example: mydomain.com\tash and then enter your password.This is how you are going to log-in to Windows Server 2022 VM now with RDP. 
+
 </p>
 <br />
 
